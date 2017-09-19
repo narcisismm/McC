@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<script type="text/javascript">
+    window.onbeforeunload = function(e){
+        if(window.event)
+            window.event.returnValue = "关闭窗口";
+        return false;
+    }
+</script>
+</body>
+</html>

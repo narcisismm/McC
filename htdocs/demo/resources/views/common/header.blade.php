@@ -1,0 +1,1 @@
+<div class="header">公共头部    当前访问的是{{$page}}</div>
