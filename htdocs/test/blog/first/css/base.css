@@ -1,0 +1,130 @@
+textarea{
+	border-color: #CCD6DE;
+}
+a{
+	text-decoration:none;
+	padding: 0px;
+	color: #5B646A;
+}
+body{
+	width: 1350px;
+	background-color:white;
+}
+/*导航栏的右侧的图标*/
+.nav-icon{
+		float: right;
+	    transform: scale(1.5);
+		color: #C3CACF;
+		margin-top: 20px;
+		margin-right: 30px;
+}
+.nav-icon:hover{
+		color: #5B646A;
+		cursor:pointer;
+}
+/*高度动态扩展的文本框：宽度，最小最大高度，浮动等需在id中定义*/
+.test_box {
+    padding: 5px;
+    outline: 0;
+    border: 1px solid #CCD6DE;
+    font-size: 12px;
+    word-wrap: break-word;
+    overflow-x: hidden;
+    overflow-y: auto;
+    _overflow-y: visible;
+	background-color: white;
+}
+.test_box:empty:before{
+    content: attr(placeholder);
+    color:#bbb;
+    }
+.test_box:focus:before{
+		content:none;
+}
+/*评论框，需要和高度动态扩展的文本框共同使用*/
+.common-text{
+	width: 500px;
+	margin-left: 10px;
+    margin-top:7px;
+	border-radius: 15px;
+	min-height: 12px;
+    max-height: 300px;
+    _height: 120px;
+	float:left;
+}
+/*过去发布的信息框*/
+.pastnews-text{
+	width:670px;
+	height: auto;
+	max-height: 500px;
+	min-height: 200px;
+	border-style: solid;
+	border-width: 1px;
+	border-color:#CCD6DE;
+	background-color: white;
+	float:right;
+	margin-left: 5px;
+	position: relative;
+	z-index: 1;
+	margin-bottom: 20px;
+	border-bottom: 3px solid #F5B2B3;
+	overflow: hidden;
+}
+/*为什么从这个地方修改发布框的css样式在实现中却实现不了而在new.php中div内部修改却可以*/
+
+
+
+/*第一类按钮*/
+.first-button{
+    border: none;
+	background-color: white;
+	color: #475258;
+}
+.first-button:hover{
+	background-color: #4C5358;
+	color: white;
+	cursor:pointer;
+}
+/*第二类按钮*/
+.second-button{   /*注意对于li元素，它的border也是一个块，如果想修改其中的文字位置，需要用的是padding*/
+	padding: 7px;
+	font-size:5px;
+	width: 20px;
+}
+.second-button:hover{	
+	background: #2DB395;
+	cursor: pointer;
+	color: white;
+}
+/*鼠标箭头指向时变绿，且样式变成手指。注意必须在同一个class或id中定义它的静态颜色和Hover时的颜色，否则hover的颜色不起作用*/
+.hover-green{
+		color:#C3CACF;
+}
+.hover-green:hover{
+		color:#36D0AE;
+		cursor:pointer;
+}
+
+.hover-green2{
+		color:#475258;
+}
+.hover-green2:hover{
+		color:#36D0AE;
+		cursor:pointer;
+}
+
+/*个人主页的大头像*/
+.avatar{
+		width: 160px;
+		height: 160px;
+		border-radius: 20px;
+		border-style: solid;
+		border-width: 4px;
+		border-color: white;
+		position: absolute;
+		margin-left: 205px;
+		margin-top: 55px;
+		z-index:250;
+		background-color:#E7E7E7;
+}
+

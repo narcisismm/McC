@@ -1,0 +1,21 @@
+.alert-box{
+       display: none;
+       position: fixed;  /*   注意   */
+       top: 40px;
+       margin-left:410px;
+       width: 525px;
+       height: 40px;
+       padding: 0px;
+       border-width: 0px; 
+        background-color:#DC3C56;
+       z-index:10001;
+       overflow: hidden;    /*防止出现滚动栏*/
+	   text-align: center;
+	   padding-bottom: 10px;
+	   color: white;
+} 
+/*
+z-index 属性设置元素的堆叠顺序。拥有更高堆叠顺序的元素总是会处于堆叠顺序较低的元素的前面。
+注释：元素可拥有负的 z-index 属性值。
+注释：Z-index 仅能在定位元素上奏效（例如 position:absolute;）！
+*/ 
